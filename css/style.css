@@ -19,7 +19,7 @@ html {
   border-style: solid;
   border-radius: 100px;
   text-align: center;
-  font-family: mo;
+  font-family: monospace;
   font-size: 50px;
 }
 .item:nth-child(3n) {

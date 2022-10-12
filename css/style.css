@@ -1,10 +1,11 @@
 html {
   min-height: 100%;
-  background-image: url("../img/bluebackground.jpeg");
+  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  color: white;
+  color: black;
+  text-align: center;
 }
 .container-home {
   display: flex;
@@ -19,11 +20,11 @@ html {
   padding-top: 20px;
   padding-bottom: 5px;
   border: 1px; 
-  border-color: white; 
+  border-color: black; 
   border-style: solid;
   border-radius: 100px;
   text-align: center;
-  font-family: monospace;
+  font-family: lobster;
   font-size: 30px;
   width: 100%
   
@@ -49,40 +50,26 @@ html {
   margin-left: 2%;
 }
 .color-white {
-  color: white;
+  color: black;
 }
 a:link {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 a:visited {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 a:hover {
-  color: white;
+  color: black;
   text-decoration: underline;
 }
 a:active {
   color: white;
   text-decoration: underline;
 }
-.smaller-image {
-  height: 100px; 
-  width: 100px
-}
-
-
-/* Re-order items into rows */
-.item:nth-child(3n+1) { order: 1; }
-.item:nth-child(3n+2) { order: 2; }
-.item:nth-child(3n)   { order: 3; }
-
-/* Force new columns */
-.container::before,
-.container::after {
-  content: "";
-  flex-basis: 100%;
-  width: 0;
-  order: 2;
+.logo {
+  font-size: 30px;
+  font-family: pacifico;
+  text-align: center;
 }

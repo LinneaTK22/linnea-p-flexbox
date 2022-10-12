@@ -6,42 +6,61 @@ html {
   background-position: center center;
   color: white;
 }
-.container {
+.container-home {
   display: flex;
-  background-color: white;
   width: 100%;
   margin: 0;
 }
 
-.item {
+.item-home {
   flex-grow: 1;
   margin-top: 10px;
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 5px;
   border: 1px; 
-  border-color: black; 
+  border-color: white; 
   border-style: solid;
   border-radius: 100px;
   text-align: center;
-  font-family: mo;
+  font-family: monospace;
   font-size: 30px;
+  width: 100%
+  
+}
+.container-sale {
+  display: flex;
+  height: 580px;
   width: 100%;
+}
+
+.item-sale {
+  margin-bottom: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item-sale img {
+  width: 33%;
+  height: auto;
 }
 
 .item + .item {
   margin-left: 2%;
 }
+.color-white {
+  color: white;
+}
 a:link {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 a:visited {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 a:hover {
-  color: black;
+  color: white;
   text-decoration: underline;
 }
 a:active {
@@ -49,5 +68,21 @@ a:active {
   text-decoration: underline;
 }
 .smaller-image {
-  height: 100px;  
+  height: 100px; 
+  width: 100px
+}
+
+
+/* Re-order items into rows */
+.item:nth-child(3n+1) { order: 1; }
+.item:nth-child(3n+2) { order: 2; }
+.item:nth-child(3n)   { order: 3; }
+
+/* Force new columns */
+.container::before,
+.container::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
 }

@@ -1,10 +1,8 @@
 html {
   min-height: 100%;
-  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  color: black;
   text-align: center;
 }
 .container-home {
@@ -24,7 +22,7 @@ html {
   border-style: solid;
   border-radius: 100px;
   text-align: center;
-  font-family: lobster;
+  font-family: fantasy;
   font-size: 30px;
   width: 100%
   
@@ -45,12 +43,77 @@ html {
   width: 33%;
   height: auto;
 }
-
-.item + .item {
-  margin-left: 2%;
+.container-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.color-white {
-  color: black;
+.item-products {
+  width: 48%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 2%;
+  border: 1px;
+  border-color: black;
+  border-radius: 100px;
+  border-style: solid;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 30px;
+}
+.background-necklace {
+  background-image: url(../img/necklace.jpeg);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-items: center;
+  height: 50px;
+}
+.background-ring {
+  background-image: url(../img/Ring.jpeg);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-items: center;
+  height: 50px;
+}
+.background-earring {
+  background-image: url(../img/earring.jpeg);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-items: center;
+  height: 50px;
+}
+.background-bracelet {
+  background-image: url(../img/bracelet.jpeg);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-items: center;
+  height: 50px;
+}
+.background-hair-accessories {
+  background-image: url(../img/hair.jpeg);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-items: center;
+  height: 50px;
+}
+.background-organisation {
+  background-image: url(../img/orginaser.jpeg);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-items: center;
+  height: 50px;
 }
 a:link {
   color: black;

@@ -4,6 +4,7 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   text-align: center;
+  font-family: fantasy;
 }
 .container-home {
   display: flex;
@@ -115,9 +116,44 @@ html {
   align-items: center;
   height: 50px;
 }
+.necklace {
+  display: flex;
+}
+.necklace-h {
+  flex-flow: row wrap;
+}
+.necklace-h, .necklace-v {
+  margin-left: -8px;
+  counter-reset: brick;
+}
+.necklace-brick {
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 0 0 8px 8px;
+  position: relative;
+}
+.necklace-brick-h {
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+}
+.necklace-img {
+  object-fit: cover;
+  background-position: center center;
+  max-width: 200px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  max-width: 100%;
+}
+.necklacelayout {
+  column-count: 3;
+}
 a:link {
   color: black;
   text-decoration: none;
+  
 }
 a:visited {
   color: black;

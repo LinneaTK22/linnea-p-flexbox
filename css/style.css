@@ -6,6 +6,14 @@ html {
   text-align: center;
   font-family: fantasy;
 }
+h2 {
+  font-family: fantasy;
+  font-size: 100px;
+}
+* {
+  box-sizing: border-box;
+}
+
 .container-home {
   display: flex;
   width: 100%;
@@ -24,9 +32,29 @@ html {
   border-radius: 100px;
   text-align: center;
   font-family: fantasy;
+  color: black;
   font-size: 30px;
   width: 100%
-  
+}
+
+.background-documentation {
+  background-image: url(../img/gold-background.png);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-items: center;
+  height: 75px;
+}
+
+.background-about {
+  background-image: url(../img/gold-background.png);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-items: center;
+  height: 75px; 
 }
 .container-sale {
   display: flex;
@@ -43,6 +71,8 @@ html {
 .item-sale img {
   width: 33%;
   height: auto;
+  padding-left: 50px;
+  justify-content: space-between;
 }
 .container-products {
   display: flex;
@@ -62,6 +92,30 @@ html {
   font-family: fantasy;
   font-size: 30px;
 }
+/*row, column & column img används till alla produkter*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 25%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+/*css för produkter*/
+.background-products {
+  background-image: url(../img/gold-background.png);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-items: center;
+  height: 75px;
+}
 .background-necklace {
   background-image: url(../img/necklace.jpeg);
   color: white;
@@ -69,16 +123,16 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   align-items: center;
-  height: 50px;
+  height: 75px;
 }
 .background-ring {
-  background-image: url(../img/Ring.jpeg);
+  background-image: url(../img/ring.jpeg);
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   align-items: center;
-  height: 50px;
+  height: 75px;
 }
 .background-earring {
   background-image: url(../img/earring.jpeg);
@@ -87,7 +141,7 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   align-items: center;
-  height: 50px;
+  height: 75px;
 }
 .background-bracelet {
   background-image: url(../img/bracelet.jpeg);
@@ -96,7 +150,7 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   align-items: center;
-  height: 50px;
+  height: 75px;
 }
 .background-hair-accessories {
   background-image: url(../img/hair.jpeg);
@@ -105,7 +159,7 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   align-items: center;
-  height: 50px;
+  height: 75px;
 }
 .background-organisation {
   background-image: url(../img/orginaser.jpeg);
@@ -114,41 +168,53 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   align-items: center;
-  height: 50px;
+  height: 75px;
 }
-.necklace {
-  display: flex;
-}
-.necklace-h {
-  flex-flow: row wrap;
-}
-.necklace-h, .necklace-v {
-  margin-left: -8px;
-  counter-reset: brick;
-}
-.necklace-brick {
-  overflow: hidden;
-  border-radius: 5px;
-  margin: 0 0 8px 8px;
-  position: relative;
-}
-.necklace-brick-h {
-  flex: auto;
-  height: 250px;
-  min-width: 150px;
-}
-.necklace-img {
-  object-fit: cover;
+/*css för kontakter*/
+.background-contact {
+  background-image: url(../img/gold-background.png);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
-  max-width: 200px;
-  max-height: 300px;
-  width: auto;
-  height: auto;
-  vertical-align: middle;
-  max-width: 100%;
+  align-items: center;
+  height: 75px;
 }
-.necklacelayout {
-  column-count: 3;
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column-contact {
+    flex: 100%;
+    padding: 0 4px;
+}
+.item-contact {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border: 5px; 
+  border-color: black; 
+  border-style: solid;
+  border-radius: 100px;
+  text-align: center;
+  font-family: fantasy;
+  color: black;
+  font-size: 50px;
+  width: 50%;
+  height: 100px;
+}
+h2 {
+  font-size: 75px;
+
+}
+h3 {
+  font-size: 50px;
+}
+p {
+  font-size: 40px;
 }
 a:link {
   color: black;

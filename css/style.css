@@ -1,23 +1,82 @@
 html {
-  min-height: 100%;
-  background-size: cover;
+  height: auto;
+  background-image: url(../img/background-img.jpeg);
+  background-attachment: fixed;
+  background-size: cover !important;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   text-align: center;
   font-family: fantasy;
 }
-h2 {
-  font-family: fantasy;
-  font-size: 100px;
-}
-* {
-  box-sizing: border-box;
+
+
+.container {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: max(env(safe-area-inset-left), 24px);
+  padding-right: max(env(safe-area-inset-right), 24px)
 }
 
-.container-home {
-  display: flex;
-  width: 100%;
-  margin: 0;
+nav {
+  min-width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  font-family: fantasy;
+  color: white;
+  font-size: 24px;
+  padding: 22px 14px;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  font-family: fantasy;
+  color: white;
+  font-size: 24px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  left: -10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+  display: block;
+
+}
+
+nav ul li ul li {
+  width: 220px;
+  border-radius: 4px;
+  text-align: left;
+}
+
+nav ul li ul li a {
+  padding: 8px 14px;
+}
+
+nav ul li ul li a:hover {
+  background-image: url(/img/skyclouds.jpeg);
 }
 
 .item-home {
@@ -26,8 +85,8 @@ h2 {
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 5px;
-  border: 1px; 
-  border-color: black; 
+  border: 1px;
+  border-color: black;
   border-style: solid;
   border-radius: 100px;
   text-align: center;
@@ -37,28 +96,9 @@ h2 {
   width: 100%
 }
 
-.background-documentation {
-  background-image: url(../img/gold-background.png);
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  align-items: center;
-  height: 75px;
-}
-
-.background-about {
-  background-image: url(../img/gold-background.png);
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  align-items: center;
-  height: 75px; 
-}
 .container-sale {
   display: flex;
-  height: 580px;
+  margin-left: 60px;
   width: 100%;
 }
 
@@ -68,17 +108,22 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .item-sale img {
-  width: 33%;
+  width: 50%;
   height: auto;
-  padding-left: 50px;
-  justify-content: space-between;
+  justify-content: space-around;
+  column-gap: normal;
+  padding-left: 300px;
+  padding-right: 300px;
 }
+
 .container-products {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .item-products {
   width: 48%;
   padding-top: 20px;
@@ -95,84 +140,49 @@ h2 {
 /*row, column & column img används till alla produkter*/
 .row {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 ;
 }
+
 .column {
   flex: 25%;
-  padding: 0 4px;
+  padding: 0 20px;
 }
+
 .column img {
-  margin-top: 8px;
+  margin-top: 100px;
   vertical-align: middle;
 }
-/*css för produkter*/
-.background-products {
-  background-image: url(../img/gold-background.png);
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  align-items: center;
-  height: 75px;
+.item-column {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 75px;
+  border: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-family: fantasy;
+  font-size: 50px;
+  width: auto;
+  height: fit-content;
 }
-.background-necklace {
-  background-image: url(../img/necklace.jpeg);
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  align-items: center;
-  height: 75px;
+.price {
+  height: auto;
+  position: relative;
+  align-self: center;
+  width: 300px;
+  background-color: white;
 }
-.background-ring {
-  background-image: url(../img/ring.jpeg);
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  align-items: center;
-  height: 75px;
+.price img {
+  width: 100%;
+  display: block;
 }
-.background-earring {
-  background-image: url(../img/earring.jpeg);
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  align-items: center;
-  height: 75px;
-}
-.background-bracelet {
-  background-image: url(../img/bracelet.jpeg);
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  align-items: center;
-  height: 75px;
-}
-.background-hair-accessories {
-  background-image: url(../img/hair.jpeg);
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  align-items: center;
-  height: 75px;
-}
-.background-organisation {
-  background-image: url(../img/orginaser.jpeg);
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  align-items: center;
-  height: 75px;
-}
+
 /*css för kontakter*/
 .background-contact {
-  background-image: url(../img/gold-background.png);
+
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
@@ -180,61 +190,72 @@ h2 {
   align-items: center;
   height: 75px;
 }
+
 .container-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .column-contact {
-    flex: 100%;
-    padding: 0 4px;
+  flex: 100%;
+  padding: 0 4px;
 }
+
 .item-contact {
-  height: 40px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: auto;
   padding-top: 20px;
   padding-bottom: 5px;
-  border: 5px; 
-  border-color: black; 
+  border: 5px;
+  border-color: white;
   border-style: solid;
   border-radius: 100px;
   text-align: center;
   font-family: fantasy;
-  color: black;
+  color: white;
   font-size: 50px;
   width: 50%;
   height: 100px;
 }
+
 h2 {
   font-size: 75px;
+  color: white;
 
 }
+
 h3 {
   font-size: 50px;
 }
-p {
+
+h4 {
   font-size: 40px;
 }
+
+p {
+  font-size: 20px;
+  color: white;
+}
+
 a:link {
   color: black;
   text-decoration: none;
-  
+
 }
+
 a:visited {
   color: black;
   text-decoration: none;
 }
+
 a:hover {
   color: black;
   text-decoration: underline;
 }
+
 a:active {
   color: white;
   text-decoration: underline;
 }
-.logo {
-  font-size: 30px;
-  font-family: pacifico;
-  text-align: center;
-}
+
+

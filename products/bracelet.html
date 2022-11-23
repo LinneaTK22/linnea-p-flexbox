@@ -1,74 +1,198 @@
 <html>
     <head>
         <link rel="stylesheet" href="../css/style.css" href="https://fonts.googleapis.com/css?family=Lobster">
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <a href="../index.html">
-            <div class="logo"><img alt="Jaime's Jewellery" src="../img/Logo.png"></div>
-        </a>
-        <div class="container-home" text-align: center;>
-            <div class="item-home background-contact"><a href="../html/contact.html">Kontakter</a></div>
-            <div class="item-home background-about"><a href="../html/about.html">Om oss</a></div>
-            <div class="item-home background-products"><a href="../html/products.html">Produkter</a></div>
-            <div class="item-home background-documentation"><a href="../html/documentation.html">Dokumentation</a></div>
-        </div>
-        <div class="container-home" text-align: center;>
-            <div class="item-products background-necklace"><a href="../products/necklace.html">Halsband</a></div>
-            <div class="item-products background-ring"><a href="../products/rings.html">Ringar</a></div>
-            <div class="item-products background-earring"><a href="../products/earring.html">Örhängen</a></div>
-            <div class="item-products background-hair-accessories"><a href="../products/hair-accessories.html">Hår accessorier</a></div>
-            <div class="item-products background-bracelet"><a href="../products/bracelet.html">Armband</a></div>
-            <div class="item-products background-organisation"><a href="../products/organisation.html">Jewellery organisation</a></div>        
-        </div>
-        <h2>Bracelet</h2>
-        <div class="row">
-            <div class="column">
-                <img src="../products/bracelet-img/1bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/2bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/3bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/4bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/5bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/6bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/7bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/8bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/9bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/10bracelet.jpeg" style="width: 100%;">
-            </div>
-            <div class="column">
-                <img src="../products/bracelet-img/11bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/12bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/13bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/14bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/15bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/16bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/17bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/18bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/19bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/20bracelet.jpeg" style="width: 100%;">
-            </div>
-            <div class="column">
-                <img src="../products/bracelet-img/21bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/22bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/23bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/24bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/25bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/26bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/27bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/28bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/29bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/30bracelet.jpeg" style="width: 100%;">
-            </div>
-            <div class="column">
-                <img src="../products/bracelet-img/31bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/32bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/33bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/34bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/35bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/36bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/37bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/38bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/39bracelet.jpeg" style="width: 100%;">
-                <img src="../products/bracelet-img/40bracelet.jpeg" style="width: 100%;">
+        <div class="container">
+            <nav>  
+                <ul>
+                    <li><a class="logo" href="/index.html"><img alt="Jaime's Jewellery" src="../img/logo.png"></a></li>
+                    <li><a href="/html/about.html">Om oss</a></li>
+                    <li><a href="/html/contact.html">Kontact</a></li>   
+                    <li><a href="#">Produkter</a>
+                        <ul>
+                            <li><a href="necklace.html">Halsband</a></li>
+                            <li><a href="rings.html">Ringar</a></li>
+                            <li><a href="earring.html">Örhängen</a></li>
+                            <li><a href="#">Armband</a></li>
+                            <li><a href="organisation.html">Smyckesförvaring</a></li>
+                            <li><a href="hair-accessories.html">Hår accessorarer</a></li>
+                        </ul>
+                    </li> 
+                    <li><a href="/html/documentation.html">Dokumentation</a></li>        
+                </ul>  
+            </nav>
+            <h2>Armband</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="price">
+                    <img src="../products/bracelet-img/1bracelet.jpeg" style="width: 100%;">
+                    <div>150 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/2bracelet.jpeg" style="width: 100%;">
+                    <div>100 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/3bracelet.jpeg" style="width: 100%;">
+                    <div>250 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/4bracelet.jpeg" style="width: 100%;">
+                    <div>50 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/5bracelet.jpeg" style="width: 100%;">
+                    <div>100 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/6bracelet.jpeg" style="width: 100%;">
+                    <div>50 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/7bracelet.jpeg" style="width: 100%;">
+                    <div>150 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/8bracelet.jpeg" style="width: 100%;">
+                    <div>250 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/9bracelet.jpeg" style="width: 100%;">
+                    <div>100 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/10bracelet.jpeg" style="width: 100%;">
+                    <div>150 kr</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="price">
+                    <img src="../products/bracelet-img/11bracelet.jpeg" style="width: 100%;">
+                    <div>100 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/12bracelet.jpeg" style="width: 100%;">
+                    <div>100 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/13bracelet.jpeg" style="width: 100%;">
+                    <div>250 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/14bracelet.jpeg" style="width: 100%;">
+                    <div>150 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/15bracelet.jpeg" style="width: 100%;">
+                    <div>50 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/16bracelet.jpeg" style="width: 100%;">
+                    <div>150 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/17bracelet.jpeg" style="width: 100%;">
+                    <div>150 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/18bracelet.jpeg" style="width: 100%;">
+                    <div>50 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/19bracelet.jpeg" style="width: 100%;">
+                    <div>50 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/20bracelet.jpeg" style="width: 100%;">
+                    <div>250 kr</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="price">
+                    <img src="../products/bracelet-img/21bracelet.jpeg" style="width: 100%;">
+                    <div>250 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/22bracelet.jpeg" style="width: 100%;">
+                    <div>100 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/23bracelet.jpeg" style="width: 100%;">
+                    <div>150 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/24bracelet.jpeg" style="width: 100%;">
+                    <div>250 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/25bracelet.jpeg" style="width: 100%;">
+                    <div>150 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/26bracelet.jpeg" style="width: 100%;">
+                    <div>50 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/27bracelet.jpeg" style="width: 100%;">
+                    <div>50 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/28bracelet.jpeg" style="width: 100%;">
+                    <div>250 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/29bracelet.jpeg" style="width: 100%;">
+                    <div>150 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/30bracelet.jpeg" style="width: 100%;">
+                    <div>50 kr</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="price">
+                    <img src="../products/bracelet-img/31bracelet.jpeg" style="width: 100%;">
+                    <div>50 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/32bracelet.jpeg" style="width: 100%;">
+                    <div>250 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/33bracelet.jpeg" style="width: 100%;">
+                    <div>100 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/34bracelet.jpeg" style="width: 100%;">
+                    <div>50 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/35bracelet.jpeg" style="width: 100%;">
+                    <div>100 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/36bracelet.jpeg" style="width: 100%;">
+                    <div>250 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/37bracelet.jpeg" style="width: 100%;">
+                    <div>50 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/38bracelet.jpeg" style="width: 100%;">
+                    <div>test one</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/39bracelet.jpeg" style="width: 100%;">
+                    <div>150 kr</div>
+                    </div>
+                    <div class="price">
+                    <img src="../products/bracelet-img/40bracelet.jpeg" style="width: 100%;">
+                    <div>100 kr</div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

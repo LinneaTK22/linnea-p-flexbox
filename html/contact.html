@@ -3,20 +3,31 @@
         <link rel="stylesheet" href="../css/style.css" href="https://fonts.googleapis.com/css?family=Lobster">
     </head>
     <body>
-        <a href="../index.html">
-            <div class="logo"><img alt="Jaime's Jewellery" src="../img/Logo.png"></div>
-        </a>
-        <div class="container-home" text-align: center;>
-            <div class="item-home background-contact"><a href="../html/contact.html">Kontakter</a></div>
-            <div class="item-home background-about"><a href="../html/about.html">Om oss</a></div>
-            <div class="item-home background-products"><a href="../html/products.html">Produkter</a></div>
-            <div class="item-home background-documentation"><a href="../html/documentation.html">Dokumentation</a></div>
+        <div>
+            <nav>  
+                <ul>
+                    <li><a class="logo" href="/index.html"><img alt="Jaime's Jewellery" src="../img/logo.png"></a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a href="#">Kontact</a></li>   
+                    <li><a href="#">Produkter</a> 
+                        <ul>
+                            <li><a href="../products/necklace.html">Halsband</a></li>
+                            <li><a href="../products/rings.html">Ringar</a></li>
+                            <li><a href="../products/earring.html">Örhängen</a></li>
+                            <li><a href="../products/bracelet.html">Armband</a></li>
+                            <li><a href="../products/organisation.html">Smyckesförvaring</a></li>
+                            <li><a href="../products/hair-accessories.html">Hår accessorarer</a></li>
+                        </ul>  
+                    </li> 
+                    <li><a href="documentation.html">Dokumentation</a></li>        
+                </ul>
+            </nav>
         </div>
         <h2>Kontakt information</h2>
-        <nav class="container-contact">
-            <div class="item-contact column-contact"><h3>Kundtjänst</h3><p>+46 70 905 70 40</p></div>
+        <div class="container-contact">
+            <div class="item-contact column-contact"><h3>Kundtjänst</h3><h4>+46 70 905 70 40</h4></div>
             <br>
-            <div class="item-contact column-contact"><h3>Adress</h3><p>Göteborg, Vaxnasgatan 54, 653 41</p></div>
-        </nav>
+            <div class="item-contact column-contact"><h3>Adress</h3><h4>Göteborg, Vaxnasgatan 54, 653 41</h4></div>
+        </div>
     </body>
 </html>

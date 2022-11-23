@@ -5,24 +5,35 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jaime's Jewellery</title>
-        <link rel="stylesheet" href="css/style.css" href="https://fonts.googleapis.com/css?family=Lobster">   
+        <link rel="stylesheet" href="css/style.css" href="https://fonts.googleapis.com/css?family=Lobster">  
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <a href="../index.html">
-            <div class="logo"><img alt="Jaime's Jewellery" src="../img/logo.png"></div>
-        </a>
-        <div class="container-home" text-align: center;>
-            <div class="item-home background-contact"><a href="../html/contact.html">Kontakter</a></div>
-            <div class="item-home background-about"><a href="../html/about.html">Om oss</a></div>
-            <div class="item-home background-products"><a href="../html/products.html">Produkter</a></div>
-            <div class="item-home background-documentation"><a href="../html/documentation.html">Dokumentation</a></div>
-        </div>
-        <div class="container-sale">
-            <div class="item-sale">
-                <img src="img/Sale-poster.png" alt="">
-                <img src="img/sale-post_3.png" alt="">
-                <img src="img/sale-post_2.png" alt="">
+        <div class="container">
+            <nav>  
+                <ul>
+                    <li><a class="logo" href="index.html"><img alt="Jaime's Jewellery" src="../img/logo.png"></a></li>
+                    <li><a href="html/about.html">Om oss</a></li>
+                    <li><a href="html/contact.html">Kontact</a></li>   
+                    <li><a href="#">Produkter</a> 
+                        <ul>
+                            <li><a href="products/necklace.html">Halsband</a></li>
+                            <li><a href="products/rings.html">Ringar</a></li>
+                            <li><a href="products/earring.html">Örhängen</a></li>
+                            <li><a href="products/bracelet.html">Armband</a></li>
+                            <li><a href="products/organisation.html">Smyckesförvaring</a></li>
+                            <li><a href="products/hair-accessories.html">Hår accessorarer</a></li>
+                        </ul>  
+                    </li> 
+                    <li><a href="html/documentation.html">Dokumentation</a></li>        
+                </ul>
+            </nav>
+            <div class="container-sale"> 
+                <div class="item-sale">
+                    <img src="img/blackfriday-poster.png" alt="">
+                    
+                </div>
             </div>
-        </div> 
+        </div>
     </body>
 </html>

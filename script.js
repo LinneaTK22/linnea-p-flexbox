@@ -126,9 +126,9 @@ function getRandomInt(max) {
 window.onload=changeImg;
 
 //products slide
-const prductContainers = [. . .document.querySelextorAll('.product-container')];
-const nxtBtn = [. . .document.querySelextorAll('.nxt-btn')];
-const preBtn = [. . .document.querySelextorAll('.pre-btn')];
+const prductContainers = [...document.querySelextorAll('.product-container')];
+const nxtBtn = [...document.querySelextorAll('.nxt-btn')];
+const preBtn = [...document.querySelextorAll('.pre-btn')];
 
 productContainers.forEach((item, i) => {
 	let containerDimensions = item.getBoundigClientRect();

@@ -9,7 +9,6 @@ html {
   font-family: fantasy;
 }
 
-
 .container {
   align-items: center;
   justify-content: center;
@@ -78,76 +77,192 @@ nav ul li ul li a {
 nav ul li ul li a:hover {
   background-image: url(/img/skyclouds.jpeg);
 }
-
-.item-home {
-  flex-grow: 1;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 5px;
-  border: 1px;
-  border-color: black;
-  border-style: solid;
-  border-radius: 100px;
-  text-align: center;
-  font-family: fantasy;
-  color: black;
-  font-size: 30px;
-  width: 100%
+.nav-space {
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
-
-.container-sale {
+/*Produkt Bildspel*/
+.product {
+position: relative;
+overflow: hidden;
+padding: 20px;
+}
+.product-category {
+padding: 0 10vw;
+font-size: 30px;
+font-weight: 500;
+margin-bottom: 40px;
+text-transform: capitalize;
+}
+.product-container {
+  padding: 0 10vw;
   display: flex;
-  margin-left: 60px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  max-width: 1200px;
+} 
+.product-container::-webkit-scrollbar {
+display: none;
+}
+.product-card {
+flex: 0 0 auto;
+width: 250px;
+height: 450px;
+margin-right: 40px;
+}
+.product-img {
+position: relative;
+width: 100%;
+height: 350px;
+overflow: hidden;
+}
+.discount-tag {
+position: absolute;
+background: white;
+padding: 5px;
+border-radius: 5px;
+color: black;
+right: 10px;
+top: 10px;
+text-transform: capitalize;
+}
+.product-thumb {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+.product-card:hover .card-btn {
+ opacity: 1; 
+}
+.card-btn:hover {
+  background: #009688;
+  color: white;
+}
+.product-info {
   width: 100%;
+  max-height: 500px;
+  padding-top: 10px;
 }
-
-.item-sale {
-  margin-bottom: 2%;
+.product-brand {
+  text-transform: uppercase;
+  color: white;
+}
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+.discount-price {
+  font-weight: 900;
+  font-size: 20px;
+  color: white;
+}
+.original-price {
+ margin-left: 20px;
+ opacity: 0.5;
+ text-decoration: line-through;
+ color: white; 
+}
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 100%);
+  cursor: pointer;
+  z-index: 9;
 }
-
-.item-sale img {
-  width: 50%;
-  height: auto;
-  justify-content: space-around;
-  column-gap: normal;
-  padding-left: 300px;
-  padding-right: 300px;
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
 }
-
-.container-products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.nxt-btn {
+  right: 0;
 }
-
-.item-products {
-  width: 48%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 2%;
-  border: 1px;
-  border-color: black;
-  border-radius: 100px;
-  border-style: solid;
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+ .collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+ }
+ .collection {
+  position: relative;
+ }
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  font-family: fantasy;
-  font-size: 30px;
+  color: white;
+  font-size: 50px;
+  text-transform: capitalize;
 }
-/*row, column & column img används till alla produkter*/
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+/*layout för slideshow och blackfriday poster*/
+.row-slideshow {
+  display: flex;
+  float: left; 
+  column-gap: 40px;
+  justify-content: space-around;
+}
+.column-slideshow {
+  flex: 50%;
+  padding: 0 20px;
+  /*backgroun till slideshow och black friday*/
+  border: 7.5px solid white 
+
+}
+/*layout för produkterna*/
 .row {
   display: flex;
   padding: 0 ;
 }
-
 .column {
   flex: 25%;
   padding: 0 20px;
 }
-
 .column img {
   margin-top: 100px;
   vertical-align: middle;
@@ -168,6 +283,7 @@ nav ul li ul li a:hover {
   width: auto;
   height: fit-content;
 }
+/*background och text om priset på produkten*/
 .price {
   height: auto;
   position: relative;
@@ -179,29 +295,16 @@ nav ul li ul li a:hover {
   width: 100%;
   display: block;
 }
-
 /*css för kontakter*/
-.background-contact {
-
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  align-items: center;
-  height: 75px;
-}
-
 .container-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .column-contact {
   flex: 100%;
   padding: 0 4px;
 }
-
 .item-contact {
   margin: auto;
   padding-top: 20px;
@@ -257,5 +360,3 @@ a:active {
   color: white;
   text-decoration: underline;
 }
-
-
